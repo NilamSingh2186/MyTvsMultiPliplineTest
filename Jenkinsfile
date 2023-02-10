@@ -1,5 +1,5 @@
 pipeline {
-        agent any
+        agent { docker {image 'test1'} }
         stages {
             stage ('GitHub-Checkout') {
                 steps {
